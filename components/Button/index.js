@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function Button() {
-  return <input type="button" value="my button" />;
+export default function Button({onClick, children}) {
+  return <div onClick={onClick}>{children}</div>;
 }
